@@ -12,7 +12,8 @@
         "tsc": "lerna run tsc",
         "eslint": "lerna run eslint",
         "prettier-format": "prettier --write .",
-        "prettier-format:watch": "onchange '**/*.(tsx|ts|js)' -- prettier --write {{changed}}"
+        "prettier-format:watch": "onchange '**/*.(tsx|ts|js)' -- prettier --write {{changed}}",
+        "postinstall": "husky install"
     },
     "workspaces": [
         "packages/**"
